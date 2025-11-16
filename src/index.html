@@ -14,13 +14,34 @@
     />
   </head>
   <body>
-    <header class="bg-black flex justify-between px-3 py-8 text-white">
+    <header
+      class="bg-black flex justify-between px-16 py-6 text-white items-center"
+    >
       <div class="space-x-1">
-        <a href="#" class="text-2xl">Abstract</a>
-        <span class="">|</span>
-        <a href="#" class="hover:underline">Help Center</a>
+        <a href="#" class="text-3xl hover:opacity-70 transition-opacity duration-300">Abstract</a>
+        <span class="text-4xl font-thin">|</span>
+        <a href="#" class="hover:underline text-2xl font-light">Help Center</a>
       </div>
-      <div class="space-x-2">
+
+      <div class="hidden xl:flex space-x-3 text-2xl">
+        <input
+          type="text"
+          class="text-black py-2 px-6 rounded-lg text-lg focus:outline-none"
+          placeholder="Search"
+        />
+        <button
+          class="border-white border font-extralight px-6 py-2 rounded-lg"
+        >
+          Submit a request
+        </button>
+        <button
+          class="font-extralight px-6 py-2 rounded-lg bg-blue-600 hover:bg-white hover:text-black transition-colors duration-300 ease-in-out"
+        >
+          Sign in
+        </button>
+      </div>
+
+      <div class="xl:hidden space-x-3 text-2xl">
         <i class="fa-solid fa-magnifying-glass"></i>
         <i class="fa-solid fa-bars"></i>
       </div>
@@ -29,100 +50,132 @@
 
     <main>
       <section class="bg-violet-200 py-20 px-3">
-
-          <div class="flex flex-col max-w-2xl mx-auto">
-            <h1 class="text-6xl text-center mb-10">How can we help you?</h1>
-            <div class="relative hover:text-blue-500 mb-10">
-              <input
-                type="text"
-                class="border border-black w-full px-3 py-5 rounded focus:outline-none focus:border-blue-500 hover:border-blue-500"
-                placeholder="Search"
-              />
-              <i
-                class="fa-solid fa-arrow-right-long opacity-60 absolute right-4 top-1/2 transform -translate-y-1/2 cursor-pointer hover:opacity-100"
-              ></i>
-            </div>
+        <div class="flex flex-col max-w-2xl mx-auto">
+          <h1 class="text-6xl text-center mb-10">How can we help you?</h1>
+          <div class="relative hover:text-blue-500 mb-10">
+            <input
+              type="text"
+              class="text-black border border-black w-full px-3 py-5 rounded focus:outline-none focus:border-blue-500 hover:border-blue-500"
+              placeholder="Search"
+            />
+            <i
+              class="fa-solid fa-arrow-right-long opacity-60 text-blue-500 absolute right-4 top-1/2 transform -translate-y-1/2 cursor-pointer hover:opacity-100"
+            ></i>
           </div>
-
-
+        </div>
       </section>
 
-
-      <section class="flex flex-wrap ">
-        <div class="bg-yellow-200 flex space-x-6 w-full lg:w-1/2 ">
-          <img src="../images/download.png" alt="" class="h-14 w-auto" />
-          <div class="space-y-4 tracking-wide ">
-            <h2 class="text-xl font-bold">Using Abstract</h2>
-            <p class="leading-6 text-lg font-light">
+      <section class="flex flex-wrap mx-6 sm:mx-28 my-32">
+        <div class="flex space-x-6 w-full lg:w-1/2 mb-28">
+          <img
+            src="../images/download.png"
+            alt=""
+            class="h-16 sm:h-20 w-auto"
+          />
+          <div class="space-y-4 tracking-wide">
+            <h2 class="text-2xl font-bold mr-8">Using Abstract</h2>
+            <p class="text-2xl font-light mr-10 sm:mr-16">
               Abstract lets you manage, version, and document your designs in
               one place.
             </p>
-            <a href="#" class="font-light text-blue-500">Learn More</a>
-            <i class="fa-solid fa-arrow-right-long opacity-60"></i>
+            <a href="#" class="font-light text-blue-500 text-xl">Learn More</a>
+            <i
+              class="fa-solid fa-arrow-right-long opacity-60 text-blue-500"
+            ></i>
           </div>
         </div>
 
-        <div class="bg-green-300 flex space-x-6 w-full lg:w-1/2 ">
-          <img src="../images/download-1.png" alt="" class="h-14 w-auto" />
-          <div class="space-y-4">
-            <h2 class="text-xl font-bold">Manage your account</h2>
-            <p class="leading-6 text-lg font-light tracking-wide">
+        <div class="flex space-x-6 w-full lg:w-1/2 mb-28">
+          <img
+            src="../images/download-1.png"
+            alt=""
+            class="h-16 sm:h-20 w-auto"
+          />
+          <div class="space-y-4 tracking-wide">
+            <h2 class="text-2xl font-bold">Manage your account</h2>
+            <p class="text-2xl font-light">
               Configure your account settings, such as your email, profile
               details, and password.
             </p>
-            <a href="#" class="font-light text-blue-500">Learn More</a>
-            <i class="fa-solid fa-arrow-right-long opacity-60"></i>
+            <a href="#" class="font-light text-blue-500 text-xl">Learn More</a>
+            <i
+              class="fa-solid fa-arrow-right-long opacity-60 text-blue-500"
+            ></i>
           </div>
         </div>
 
-        <div class="bg-yellow-300 flex space-x-6 w-full lg:w-1/2 ">
-          <img src="../images/download-2.png" alt="" class="h-14 w-auto" />
-          <div class="space-y-4">
-            <h2 class="text-xl font-bold">
+        <div class="flex space-x-6 w-full lg:w-1/2 mb-28">
+          <img
+            src="../images/download-2.png"
+            alt=""
+            class="h-16 sm:h-20 w-auto"
+          />
+          <div class="space-y-4 tracking-wide">
+            <h2 class="text-2xl font-bold mr-8">
               Manage organizations, teams, and projects
             </h2>
-            <p class="leading-6 text-lg font-light tracking-wide">
+            <p class="text-2xl font-light mr-10 sm:mr-16">
               Use Abstract organizations, teams, and projects to organize your
               people and your work.
             </p>
-            <a href="#" class="font-light text-blue-500">Learn More</a>
-            <i class="fa-solid fa-arrow-right-long opacity-60"></i>
+            <a href="#" class="font-light text-blue-500 text-xl">Learn More</a>
+            <i
+              class="fa-solid fa-arrow-right-long opacity-60 text-blue-500"
+            ></i>
           </div>
         </div>
 
-        <div class="bg-green-300 flex space-x-6 w-full lg:w-1/2 ">
-          <img src="../images/download-3.png" alt="" class="h-14 w-auto" />
-          <div class="space-y-4">
-            <h2 class="text-xl font-bold">Manage billing</h2>
-            <p class="leading-6 text-lg font-light tracking-wide">
+        <div class="flex space-x-6 w-full lg:w-1/2 mb-28">
+          <img
+            src="../images/download-3.png"
+            alt=""
+            class="h-16 sm:h-20 w-auto"
+          />
+          <div class="space-y-4 tracking-wide">
+            <h2 class="text-2xl font-bold mr-8">Manage billing</h2>
+            <p class="text-2xl font-light mr-10 sm:mr-16">
               Change subscriptions and payment details.
             </p>
-            <a href="#" class="font-light text-blue-500">Learn More</a>
-            <i class="fa-solid fa-arrow-right-long opacity-60"></i>
+            <a href="#" class="font-light text-blue-500 text-xl">Learn More</a>
+            <i
+              class="fa-solid fa-arrow-right-long opacity-60 text-blue-500"
+            ></i>
           </div>
         </div>
 
-        <div class="bg-yellow-300 flex space-x-6 w-full lg:w-1/2 ">
-          <img src="../images/download-4.png" alt="" class="h-14 w-auto" />
-          <div class="space-y-4">
-            <h2 class="text-xl font-bold">Authenticate to Abstract</h2>
-            <p class="leading-6 text-lg font-light tracking-wide">
+        <div class="flex space-x-6 w-full lg:w-1/2 mb-28">
+          <img
+            src="../images/download-4.png"
+            alt=""
+            class="h-16 sm:h-20 w-auto"
+          />
+          <div class="space-y-4 tracking-wide">
+            <h2 class="text-2xl font-bold mr-8">Authenticate to Abstract</h2>
+            <p class="text-2xl font-light mr-10 sm:mr-16">
               Set up and configure SSO, SCIM, and Just-in-Time provisioning.
             </p>
-            <a href="#" class="font-light text-blue-500">Learn More</a>
-            <i class="fa-solid fa-arrow-right-long opacity-60"></i>
+            <a href="#" class="font-light text-blue-500 text-xl">Learn More</a>
+            <i
+              class="fa-solid fa-arrow-right-long opacity-60 text-blue-500"
+            ></i>
           </div>
         </div>
 
-        <div class="bg-green-300 flex space-x-6 w-full lg:w-1/2 ">
-          <img src="../images/download-5.png" alt="" class="h-14 w-auto" />
-          <div class="space-y-4">
-            <h2 class="text-xl font-bold">Abstract support</h2>
-            <p class="leading-6 text-lg font-light tracking-wide">
+        <div class="flex space-x-6 w-full lg:w-1/2 mb-28">
+          <img
+            src="../images/download-5.png"
+            alt=""
+            class="h-16 sm:h-20 w-auto"
+          />
+          <div class="space-y-4 tracking-wide">
+            <h2 class="text-2xl font-bold mr-8">Abstract support</h2>
+            <p class="text-2xl font-light mr-10 sm:mr-16">
               Get in touch with a human.
             </p>
-            <a href="#" class="font-light text-blue-500">Learn More</a>
-            <i class="fa-solid fa-arrow-right-long opacity-60"></i>
+            <a href="#" class="font-light text-blue-500 text-xl">Learn More</a>
+            <i
+              class="fa-solid fa-arrow-right-long opacity-60 text-blue-500"
+            ></i>
           </div>
         </div>
       </section>
@@ -130,9 +183,9 @@
 
     <footer class="bg-black text-white flex flex-wrap px-6 py-12">
       <div class="pr-12 pb-4">
-        <h2 class="text-xl font-bold pb-2">Resources</h2>
+        <h2 class="text-2xl font-bold mr-8 pb-2">Resources</h2>
         <div class="">
-          <ul class="text-sm font-thin space-y-1">
+          <ul class="text-base font-extralight space-y-1">
             <li><a href="#" class="hover:underline">Blog</a></li>
             <li><a href="#" class="hover:underline">Help Center</a></li>
             <li><a href="#" class="hover:underline">Release Notes</a></li>
@@ -142,9 +195,9 @@
       </div>
 
       <div class="pr-12 pb-4">
-        <h2 class="text-xl font-bold pb-2">Community</h2>
+        <h2 class="text-2xl font-bold mr-8 pb-2">Community</h2>
         <div class="">
-          <ul class="text-sm font-thin space-y-1">
+          <ul class="text-base font-extralight space-y-1">
             <li><a href="#" class="hover:underline">Twitter</a></li>
             <li><a href="#" class="hover:underline">LinkedIn</a></li>
             <li><a href="#" class="hover:underline">Facebook</a></li>
@@ -155,9 +208,9 @@
       </div>
 
       <div class="pr-12 pb-4">
-        <h2 class="text-xl font-bold pb-2">Company</h2>
+        <h2 class="text-2xl font-bold mr-8 pb-2">Company</h2>
         <div class="">
-          <ul class="text-sm font-thin space-y-1">
+          <ul class="text-base font-extralight space-y-1">
             <li><a href="#" class="hover:underline">About Us</a></li>
             <li><a href="#" class="hover:underline">Careers</a></li>
             <li><a href="#" class="hover:underline">Legal</a></li>
@@ -166,9 +219,9 @@
       </div>
 
       <div class="pr-12 pb-4">
-        <h2 class="text-xl font-bold pb-2">Contact Us</h2>
+        <h2 class="text-2xl font-bold mr-8 pb-2">Contact Us</h2>
         <div class="">
-          <ul class="text-sm font-thin space-y-1">
+          <ul class="text-base font-extralight space-y-1">
             <li>
               <a href="#" class="hover:underline">infor@goabstract.com</a>
             </li>
@@ -178,9 +231,9 @@
     </footer>
     <div class="fixed bottom-3 right-4">
       <button
-        class="bg-blue-600 text-white px-4 py-2 rounded-2xl font-semibold text-sm"
+        class="cursor-pointer tracking-wider bg-blue-600 text-white px-6 py-3 rounded-3xl font-semibold text-base"
       >
-        <i class="fa-regular fa-circle-question mr-1"></i>
+        <i class="fa-regular fa-circle-question mr-1 text-lg"></i>
         Help
       </button>
     </div>
