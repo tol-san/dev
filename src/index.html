@@ -14,33 +14,44 @@
     />
   </head>
   <body>
-    <header class="bg-black flex justify-between px-3 py-5 text-white">
+    <header class="bg-black flex justify-between px-3 py-8 text-white">
       <div class="space-x-1">
-        <a href="#" class="text-xl">Abstract</a>
+        <a href="#" class="text-2xl">Abstract</a>
         <span class="">|</span>
-        <a href="#">Help Center</a>
+        <a href="#" class="hover:underline">Help Center</a>
       </div>
       <div class="space-x-2">
         <i class="fa-solid fa-magnifying-glass"></i>
         <i class="fa-solid fa-bars"></i>
       </div>
     </header>
+    <!-- End header -->
+
     <main>
-      <section
-        class="flex flex-col items-center bg-violet-200 px-3 py-20 space-y-10"
-      >
-        <h1 class="text-5xl">How can we help you?</h1>
-        <input
-          type="text"
-          class="border border-black w-full p-3 rounded focus:outline-none focus:border-blue-500"
-          placeholder="Search"
-        />
+      <section class="bg-violet-200 py-20 px-3">
+
+          <div class="flex flex-col max-w-2xl mx-auto">
+            <h1 class="text-6xl text-center mb-10">How can we help you?</h1>
+            <div class="relative hover:text-blue-500 mb-10">
+              <input
+                type="text"
+                class="border border-black w-full px-3 py-5 rounded focus:outline-none focus:border-blue-500 hover:border-blue-500"
+                placeholder="Search"
+              />
+              <i
+                class="fa-solid fa-arrow-right-long opacity-60 absolute right-4 top-1/2 transform -translate-y-1/2 cursor-pointer hover:opacity-100"
+              ></i>
+            </div>
+          </div>
+
+
       </section>
 
-      <section class="flex flex-col">
-        <div class="flex items-center space-x-6 mx-12 my-16">
-          <img src="../images/download.png" alt="" class="h-16" />
-          <div class="space-y-4 tracking-wide">
+
+      <section class="flex flex-auto flex-wrap my-16">
+        <div class="bg-yellow-200 flex space-x-6 max-w-xl ">
+          <img src="../images/download.png" alt="" class="h-14 w-auto" />
+          <div class="space-y-4 tracking-wide ">
             <h2 class="text-xl font-bold">Using Abstract</h2>
             <p class="leading-6 text-lg font-light">
               Abstract lets you manage, version, and document your designs in
@@ -51,8 +62,8 @@
           </div>
         </div>
 
-        <div class="flex items-center space-x-6 mx-12 my-16">
-          <img src="../images/download-1.png" alt="" class="h-16" />
+        <div class="bg-green-300 flex space-x-6 max-w-xl ">
+          <img src="../images/download-1.png" alt="" class="h-14 w-auto" />
           <div class="space-y-4">
             <h2 class="text-xl font-bold">Manage your account</h2>
             <p class="leading-6 text-lg font-light tracking-wide">
@@ -64,8 +75,8 @@
           </div>
         </div>
 
-        <div class="flex items-center space-x-6 mx-12 my-16">
-          <img src="../images/download-2.png" alt="" class="h-16" />
+        <div class="bg-yellow-300 flex space-x-6 max-w-xl ">
+          <img src="../images/download-2.png" alt="" class="h-14 w-auto" />
           <div class="space-y-4">
             <h2 class="text-xl font-bold">
               Manage organizations, teams, and projects
@@ -79,8 +90,8 @@
           </div>
         </div>
 
-        <div class="flex items-center space-x-6 mx-12 my-16">
-          <img src="../images/download-3.png" alt="" class="h-16" />
+        <div class="bg-green-300 flex space-x-6 max-w-xl ">
+          <img src="../images/download-3.png" alt="" class="h-14 w-auto" />
           <div class="space-y-4">
             <h2 class="text-xl font-bold">Manage billing</h2>
             <p class="leading-6 text-lg font-light tracking-wide">
@@ -91,8 +102,8 @@
           </div>
         </div>
 
-        <div class="flex items-center space-x-6 mx-12 my-16">
-          <img src="../images/download-4.png" alt="" class="h-16" />
+        <div class="bg-yellow-300 flex space-x-6 max-w-xl ">
+          <img src="../images/download-4.png" alt="" class="h-14 w-auto" />
           <div class="space-y-4">
             <h2 class="text-xl font-bold">Authenticate to Abstract</h2>
             <p class="leading-6 text-lg font-light tracking-wide">
@@ -103,8 +114,8 @@
           </div>
         </div>
 
-        <div class="flex items-center space-x-6 mx-12 my-16">
-          <img src="../images/download-5.png" alt="" class="h-16" />
+        <div class="bg-green-300 flex space-x-6 max-w-xl ">
+          <img src="../images/download-5.png" alt="" class="h-14 w-auto" />
           <div class="space-y-4">
             <h2 class="text-xl font-bold">Abstract support</h2>
             <p class="leading-6 text-lg font-light tracking-wide">
@@ -117,17 +128,61 @@
       </section>
     </main>
 
-    <footer class="bg-black text-white">
-      <div>
-          <h2 class="text-xl font-bold">Abstract</h2>
-          <div>
-            <ul class="text-sm font-thin">
-                <li><a href="#">Start Trial</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Download</a></li>
-            </ul>
-          </div>
+    <footer class="bg-black text-white flex flex-wrap px-6 py-12">
+      <div class="pr-12 pb-4">
+        <h2 class="text-xl font-bold pb-2">Resources</h2>
+        <div class="">
+          <ul class="text-sm font-thin space-y-1">
+            <li><a href="#" class="hover:underline">Blog</a></li>
+            <li><a href="#" class="hover:underline">Help Center</a></li>
+            <li><a href="#" class="hover:underline">Release Notes</a></li>
+            <li><a href="#" class="hover:underline">Status</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pr-12 pb-4">
+        <h2 class="text-xl font-bold pb-2">Community</h2>
+        <div class="">
+          <ul class="text-sm font-thin space-y-1">
+            <li><a href="#" class="hover:underline">Twitter</a></li>
+            <li><a href="#" class="hover:underline">LinkedIn</a></li>
+            <li><a href="#" class="hover:underline">Facebook</a></li>
+            <li><a href="#" class="hover:underline">Dribbble</a></li>
+            <li><a href="#" class="hover:underline">Podcast</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pr-12 pb-4">
+        <h2 class="text-xl font-bold pb-2">Company</h2>
+        <div class="">
+          <ul class="text-sm font-thin space-y-1">
+            <li><a href="#" class="hover:underline">About Us</a></li>
+            <li><a href="#" class="hover:underline">Careers</a></li>
+            <li><a href="#" class="hover:underline">Legal</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pr-12 pb-4">
+        <h2 class="text-xl font-bold pb-2">Contact Us</h2>
+        <div class="">
+          <ul class="text-sm font-thin space-y-1">
+            <li>
+              <a href="#" class="hover:underline">infor@goabstract.com</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
+    <div class="fixed bottom-3 right-4">
+      <button
+        class="bg-blue-600 text-white px-4 py-2 rounded-2xl font-semibold text-sm"
+      >
+        <i class="fa-regular fa-circle-question mr-1"></i>
+        Help
+      </button>
+    </div>
   </body>
 </html>
